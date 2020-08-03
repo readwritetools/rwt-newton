@@ -1,6 +1,6 @@
 {
   "name": "rwt-newton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "References to related documents, using standardized styling, a W3C standard Web Component",
   "author": "Read Write Tools",
   "license": "MIT",

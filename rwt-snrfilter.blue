@@ -1,0 +1,24 @@
+!blue 2.0
+//=============================================================================
+//
+//  File:         /node_modules/rwt-snrfilter/rwt-snrfilter.blue
+//  Language:     Blue-phrase
+//  Copyright:    Read Write Tools © 2020
+//  License:      MIT
+//  Initial date: Aug 1, 2020
+//  Contents:     References to related documents, using standardized styling
+//
+//=============================================================================
+
+!option --fragment
+
+div #reference-block {
+	h1 References
+	h2 <<slot *name=h2>>
+	h3 <<slot *name=h3>>
+	dl {
+		dt <<slot *name=dt>>
+		dd <<slot *name=dd>>
+	}
+}
+		

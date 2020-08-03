@@ -1,0 +1,28 @@
+/*=============================================================================
+
+  File:         /node_modules/rwt-snrfilter/rwt-snrfilter.css
+  Language:     CSS
+  Copyright:    Read Write Tools © 2020
+  License:      MIT
+  Initial date: Aug 2, 2020
+  Contents:     References to related documents, using standardized styling
+
+=============================================================================*/
+
+:host h1 {
+	color: red;
+}
+:host h2 {
+	color: green;
+}
+:host h3 {
+	color: cyan;
+}
+:host dt {
+	color: blue;
+}
+:host dd {
+	color: magenta;
+}
+
+	

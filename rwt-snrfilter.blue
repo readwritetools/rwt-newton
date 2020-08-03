@@ -12,8 +12,10 @@
 
 !option --fragment
 
-div #reference-block {
-	h1 References
+div #reference-area {
+}
+details #references {
+	summary References
 	h2 <<slot *name=h2>>
 	h3 <<slot *name=h3>>
 	dl {

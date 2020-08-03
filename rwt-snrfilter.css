@@ -9,20 +9,14 @@
 
 =============================================================================*/
 
-:host h1 {
-	color: red;
+#reference-area {
+	position: relative;
+	height: 2rem;
+	z-index: 1;
+	margin: 0;
 }
-:host h2 {
-	color: green;
+#references {
+	position: relative;
+	top: -2rem;
+	margin: 0;
 }
-:host h3 {
-	color: cyan;
-}
-:host dt {
-	color: blue;
-}
-:host dd {
-	color: magenta;
-}
-
-	

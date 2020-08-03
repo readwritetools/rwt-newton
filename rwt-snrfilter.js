@@ -30,7 +30,7 @@ export default class RwtSnrfilter extends HTMLElement {
 		this.isComponentLoaded = false;
 
 		// child elements
-		this.referenceBlock = null;
+		this.referenceArea = null;
 		
 		Object.seal(this);
 	}
@@ -53,6 +53,7 @@ export default class RwtSnrfilter extends HTMLElement {
 			this.identifyChildren();
 			this.registerEventListeners();
 			this.sendComponentLoaded();
+			this.styleReferenceArea();
 		}
 		catch (err) {
 			console.log(err.message);
@@ -126,11 +127,10 @@ export default class RwtSnrfilter extends HTMLElement {
 	
 	//^ Identify this component's children
 	identifyChildren() {
-		this.referenceBlock = this.shadowRoot.getElementById('reference-block');
+		this.referenceArea = this.shadowRoot.getElementById('reference-area');
 	}
 	
 	registerEventListeners() {
-		// component events
 	}
 	
 	//^ Inform the document's custom element that it is ready for programmatic use 
@@ -147,6 +147,13 @@ export default class RwtSnrfilter extends HTMLElement {
 			else
 				this.addEventListener('component-loaded', resolve);
 		});
+	}
+	
+	styleReferenceArea() {
+		if (this.hasAttribute('background'))
+			this.referenceArea.style.backgroundColor = this.getAttribute('background');
+		else
+			this.referenceArea.style.backgroundColor = '#fff';
 	}
 }
 

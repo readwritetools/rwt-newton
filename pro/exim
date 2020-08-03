@@ -1,7 +1,7 @@
 !blue 2.0
 //=============================================================================
 //
-// File:         rwt-snrfilter/pro/exim
+// File:         rwt-newton/pro/exim
 // Language:     prorenata script
 // Copyright:    Read Write Tools © 2020
 // License:      MIT License
@@ -16,7 +16,7 @@ template {
 
 // ---------- Convert blue document into Github Flavored readme.md ---------- 
 recurse {
-	source '/palau/srv/hub.readwritetools.com/components/ghfm/snrfilter.blue'
+	source '/palau/srv/hub.readwritetools.com/components/ghfm/newton.blue'
 	dest   '../readme.md' 
 	overwrite always
 	exec ghfm

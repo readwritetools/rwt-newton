@@ -1,6 +1,6 @@
 //=============================================================================
 //
-// File:         /node_modules/rwt-snrfilter/rwt-snrfilter.js
+// File:         /node_modules/rwt-newton/rwt-newton.js
 // Language:     ECMAScript 2015
 // Copyright:    Read Write Tools © 2020
 // License:      MIT
@@ -10,17 +10,17 @@
 //=============================================================================
 
 const Static = {
-	componentName:    'rwt-snrfilter',
+	componentName:    'rwt-newton',
 	elementInstance:  1,
-	htmlURL:          '/node_modules/rwt-snrfilter/rwt-snrfilter.blue',
-	cssURL:           '/node_modules/rwt-snrfilter/rwt-snrfilter.css',
+	htmlURL:          '/node_modules/rwt-newton/rwt-newton.blue',
+	cssURL:           '/node_modules/rwt-newton/rwt-newton.css',
 	htmlText:         null,
 	cssText:          null
 };
 
 Object.seal(Static);
 
-export default class RwtSnrfilter extends HTMLElement {
+export default class RwtNewton extends HTMLElement {
 	
 	constructor() {
 		super();
@@ -157,4 +157,4 @@ export default class RwtSnrfilter extends HTMLElement {
 	}
 }
 
-window.customElements.define(Static.componentName, RwtSnrfilter);
+window.customElements.define(Static.componentName, RwtNewton);

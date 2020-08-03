@@ -9,7 +9,7 @@
 
 
 <figure>
-	<img src='/img/components/snrfilter/paolozzi-statue-of-isaac-newton.png' width='100%' />
+	<img src='/img/components/newton/paolozzi-statue-of-isaac-newton.png' width='100%' />
 	<figcaption>Paolozzi statue of Isaac Newton</figcaption>
 </figure>
 
@@ -25,12 +25,12 @@
 
 <table>
 	<tr><th>Abstract</th></tr>
-	<tr><td>The <span class=product>rwt-snrfilter</span> web component displays document references using standardized styling.</td></tr>
+	<tr><td>The <span class=product>rwt-newton</span> web component displays document references using standardized styling.</td></tr>
 </table>
 
 #### Prerequisites
 
-The <span>rwt-snrfilter</span> web component works in any browser that
+The <span>rwt-newton</span> web component works in any browser that
 supports modern W3C standards. Templates are written using <span>BLUE</span><span>
 PHRASE</span> notation, which can be compiled into HTML using the free <a href='https://hub.readwritetools.com/desktop/rwview.blue'>Read Write View</a>
 desktop app. It has no other prerequisites. Distribution and installation are
@@ -42,7 +42,7 @@ If you are familiar with Node.js and the `package.json` file, you'll be
 comfortable installing the component just using this command:
 
 ```bash
-npm install rwt-snrfilter
+npm install rwt-newton
 ```
 
 If you are a front-end Web developer with no prior experience with NPM, follow
@@ -57,7 +57,7 @@ npm init
 
    * Download and install the web component using the command:
 ```bash
-npm install rwt-snrfilter
+npm install rwt-newton
 ```
 
 
@@ -70,10 +70,9 @@ does not need them.
 If you are more comfortable using Github for installation, follow these steps:
 
    * Create a directory `node_modules` in the root of your web project.
-   * Clone the <span>rwt-snrfilter</span> web component into it using the
-      command:
+   * Clone the <span>rwt-newton</span> web component into it using the command:
 ```bash
-git clone https://github.com/readwritetools/rwt-snrfilter.git
+git clone https://github.com/readwritetools/rwt-newton.git
 ```
 
 
@@ -82,40 +81,40 @@ git clone https://github.com/readwritetools/rwt-snrfilter.git
 After installation, you need to add two things to your HTML page to make use of
 it.
 
-   * Add a `script` tag to load the component's `rwt-snrfilter.js` file:
+   * Add a `script` tag to load the component's `rwt-newton.js` file:
 ```html
-<script src='/node_modules/rwt-snrfilter/rwt-snrfilter.js' type=module></script>             
+<script src='/node_modules/rwt-newton/rwt-newton.js' type=module></script>             
 ```
 
    * Add the component tag somewhere on the page, supplying four pieces of slotted
       text:
 
-      1. `span slot=h2` The <h2> heading text (optional).
-      2. `span slot=h3` The <h3> heading text (optional).
+      1. `span slot=h2` The h2 heading text (optional).
+      2. `span slot=h3` The h3 heading text (optional).
       3. `span slot=dt` A definition term.
-      4. `span slot=dd` A definition description. This typically has an <a> tag with the
+      4. `span slot=dd` A definition description. This typically has an anchor tag with the
          external reference.
 
 Here's an example:
 
 ```html
-<rwt-snrfilter role=navigation>
+<rwt-newton role=navigation>
     <span slot=h2>Giants</span>
     <span slot=h3>Isaac Newton</span>
     <span slot=dt>Famous quotes</span>
-    <span slot=dd><a href='https://example.com/shoulders-of-giants.html'>If I Have Seen Further</a> Using the understanding gained by major thinkers who have gone before in order to make intellectual progress.</span>
-</rwt-snrfilter>
+    <span slot=dd><a href='https://example.com/shoulders-of-giants.html'> If I Have Seen Further</a> Using the understanding gained by major thinkers who have gone before in order to make intellectual progress.</span>
+</rwt-newton>
 ```
 
 ### Customization
 
-The reference area has limited customization. Supply a background color using
-the `background` attribute.
+The reference area has limited customization. Only the background color may be
+customized. Supply a background color using the `background` attribute.
 
 ```html
-<rwt-snrfilter role=navigation background='#777'>
+<rwt-newton role=navigation background='#777'>
     ...
-</rwt-snrfilter>
+</rwt-newton>
 ```
 
 ### Life-cycle events
@@ -130,7 +129,7 @@ The component issues life-cycle events.
 
 ### License
 
-The <span>rwt-snrfilter</span> web component is licensed under the MIT
+The <span>rwt-newton</span> web component is licensed under the MIT
 License.
 
 <img src='/img/blue-seal-mit.png' width=80 align=right />
@@ -147,8 +146,8 @@ License.
 
 
 <table>
-	<tr><td>Source code</td> 			<td><a href='https://github.com/readwritetools/rwt-snrfilter'>github</a></td></tr>
-	<tr><td>Package installation</td> <td><a href='https://www.npmjs.com/package/rwt-snrfilter'>NPM</a></td></tr>
-	<tr><td>Documentation</td> 		<td><a href='https://hub.readwritetools.com/components/snrfilter.blue'>Read Write Hub</a></td></tr>
+	<tr><td>Source code</td> 			<td><a href='https://github.com/readwritetools/rwt-newton'>github</a></td></tr>
+	<tr><td>Package installation</td> <td><a href='https://www.npmjs.com/package/rwt-newton'>NPM</a></td></tr>
+	<tr><td>Documentation</td> 		<td><a href='https://hub.readwritetools.com/components/newton.blue'>Read Write Hub</a></td></tr>
 </table>
 

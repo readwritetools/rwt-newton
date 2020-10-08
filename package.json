@@ -1,7 +1,7 @@
 {
   "name": "rwt-newton",
   "version": "1.0.4",
-  "description": "References to related documents, using standardized styling, a W3C standard Web Component",
+  "description": "References to related documents, using standardized styling, a standards-based DOM Component",
   "author": "Read Write Tools",
   "license": "MIT",
   "module": "rwt-newton.js",
